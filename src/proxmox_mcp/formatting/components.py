@@ -132,7 +132,7 @@ class ProxmoxComponents:
         """
         from .formatters import ProxmoxFormatters
 
-        (used / total * 100) if total > 0 else 0
+        percentage=(used / total * 100) if total > 0 else 0
         progress = ProxmoxComponents.create_progress_bar(used, total)
 
         return (
@@ -140,6 +140,7 @@ class ProxmoxComponents:
             f"  {progress}\n"
             f"  {ProxmoxFormatters.format_bytes(int(used))} / "
             f"{ProxmoxFormatters.format_bytes(int(total))}"
+            f"{percentage:.1f}%"
         )
 
     @staticmethod

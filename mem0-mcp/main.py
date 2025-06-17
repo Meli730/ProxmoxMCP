@@ -31,7 +31,7 @@ mem0_client.update_project(custom_instructions=CUSTOM_INSTRUCTIONS)
 
 
 @mcp.tool(
-    description="""Add a new coding preference to mem0. This tool stores code snippets, 
+    description="""Add a new coding preference to mem0. This tool stores code snippets,
     implementation details, and coding patterns for future reference. Store every code snippet. 
     When storing code, you should include:
     - Complete code with all necessary imports and dependencies
@@ -70,7 +70,7 @@ async def add_coding_preference(text: str) -> str:
 
 
 @mcp.tool(
-    description="""Retrieve all stored coding preferences for the default user. Call this tool 
+    description="""Retrieve all stored coding preferences for the default user. Call this tool
     when you need complete context of all previously stored preferences. This is useful when:
     - You need to analyze all available code patterns
     - You want to check all stored implementation examples
@@ -102,7 +102,7 @@ async def get_all_coding_preferences() -> str:
 
 
 @mcp.tool(
-    description="""Search through stored coding preferences using semantic search. This tool 
+    description="""Search through stored coding preferences using semantic search. This tool
     should be called for EVERY user query to find relevant code and implementation details. 
     It helps find:
     - Specific code implementations or patterns

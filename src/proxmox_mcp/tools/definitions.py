@@ -3,7 +3,7 @@ Tool descriptions for Proxmox MCP tools.
 """
 
 # Node tool descriptions
-GET_NODES_DESC = """List all nodes in the Proxmox cluster with their status, CPU, memory, 
+GET_NODES_DESC = """List all nodes in the Proxmox cluster with their status, CPU, memory,
 and role information.
 
 Example:
@@ -35,7 +35,7 @@ Example:
 {"success": true, "output": "Linux vm1 5.4.0", "exit_code": 0}"""
 
 # Container tool descriptions
-GET_CONTAINERS_DESC = """List all LXC containers across the cluster with their status 
+GET_CONTAINERS_DESC = """List all LXC containers across the cluster with their status
 and configuration.
 
 Example:
